@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+body{
+    font-size: 16px;
+    background-color: hsl(270, 20%, 96%);
+    font-family: "Rubik", sans-serif;
+}
+*{
+    margin: 0;
+}
+.parent .phone{
+    background-color:  hsl(270, 20%, 96%);
+    width: 350px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+    -webkit-transform: translatey(-50%);
+    -moz-transform: translatey(-50%);
+    -ms-transform: translatey(-50%);
+    -o-transform: translatey(-50%);
+    right: 58%;
+    border: 10px white solid;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    overflow: hidden;
+    z-index: 12;
+}
+.parent .phone::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 170px;
+    height: 31px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    background-color: white;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    z-index: 11;
+}
+.parent .phone .name{
+    background-image: linear-gradient(to left,hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    margin: 0;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 18%;
+    position: relative;
+}
+.parent .phone .name img{
+    width: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 3px white solid;
+    align-self: center;
+    transform: translate(40px , 5px);
+    -webkit-transform: translate(40px , 5px);
+    -moz-transform: translate(40px , 5px);
+    -ms-transform: translate(40px , 5px);
+    -o-transform: translate(40px , 5px);
+}
+.parent .phone .name .arrow{
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    position: absolute;
+    left: 6%;
+    top: 44%;
+    border-width: 0 3px 3px 0;
+    height: 4px;
+    width: 4px;
+    padding: 3px;
+    z-index: 10;
+    transform: rotate(135deg) translatey(-50%);
+    -webkit-transform: rotate(135deg) translateY(-50%);
+    -moz-transform: rotate(135deg) translateY(-50%);
+    -ms-transform: rotate(135deg) translateY(-50%);
+    -o-transform: rotate(135deg) translateY(-50%);
+}
+.parent .phone .name p:first-of-type{
+    align-self: center;
+    color: white;
+    transform: translate( 50px , -4px );
+    -webkit-transform: translate( 50px , -4px );
+    -moz-transform: translate( 50px , -4px );
+    -ms-transform: translate( 50px , -4px );
+    -o-transform: translate( 50px , -4px );
+}
+.parent .phone .name p:last-of-type{
+    color: hsl(276, 100%, 81%);
+    align-self: center;
+    transform: translate( -55px , 17px );
+    -webkit-transform: translate( -55px , 17px );
+    -moz-transform: translate( -55px , 17px );
+    -ms-transform: translate( -55px , 17px );
+    -o-transform: translate( -55px , 17px );
+    width: fit-content;
+}
+.parent .phone .messages *{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    height: 82%;
+    font-size: 12px;
+}
+.parent .phone .messages .r {
+    display: flex;
+    flex-wrap: wrap;
+    height: 36%;
+    justify-content: flex-end;
+}
+.parent .phone .messages .r img:last-of-type{
+    margin-right: 14px;
+}
+.parent .phone .messages .r img{
+    margin-left: 10px;
+}
+.parent .phone .messages .left{
+    background-color: hsl(206, 6%, 79%);
+    color: hsl(276, 55%, 52%);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    padding: 5px;
+    margin-left: 14px;
+}
+.parent .phone .messages .left:first-of-type{
+    margin-top: 10px;
+}
+.parent .phone .messages .images{
+    position: relative;
+    right: 0;
+}
+.parent .phone .messages .images img{
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    width: 72px;
+}
+.parent .phone .messages .right{
+    background-color: white;
+    color: hsl(271, 15%, 43%);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    padding: 5px;
+    margin-right: 14px;
+    box-shadow: -2px 2px 20px -1px;
+}
+.parent .phone .messages input{
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    background-color: white;
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 50px;
+    margin-left: 14px;
+    margin-right: 14px;
+    overflow: hidden;
+    padding-left: 30px;
+}
+.parent .phone .messages .m30{
+    background-image: linear-gradient(to right,hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border-bottom-left-radius: 8px;
+    padding: 10px;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin-left: 14px;
+}
+.parent .phone .messages .h1{
+    background-image: linear-gradient(to right,hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border-bottom-left-radius: 8px;
+    padding: 10px;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin-left: 14px;
+}
+.parent .phone .messages .m30 p:last-of-type{
+    font-weight: 700;
+}
+.parent .phone .messages .h1 p:last-of-type{
+    font-weight: 700;
+}
+.parent .phone .messages input::placeholder{
+    padding-left: 20px;
+}
+.parent .attribution{
+    font-size: 11px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+}
+.parent .attribution p:first-of-type{
+    margin-left: 8px;
+}
+.parent .attribution p:last-of-type{
+    margin-right: 8px;
+}
