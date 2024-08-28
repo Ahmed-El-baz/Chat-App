@@ -9,6 +9,16 @@
 </head>
 <body>
 	<div class="parent">
+		<div class="vs"></div>
+		<div class="gs"></div>
+		<div class="text">
+			<h1>
+				Simple booking
+			</h1>
+			<p>
+				Stay in touch with our dog walkers through the chat <br> interface. This makes it easy to discuss arrangements and <br> make bookings. Once the walk has been completed you can <br> rate your walker and book again all through the chat.
+			</p>
+		</div>
 		<div class="phone">
 			<div class="name">
 				<div class="arrow"></div>
@@ -24,11 +34,9 @@
 				<p class="left">
 					That sounds great. I'd be <br> happy with that.
 				</p>
-				<br>
 				<p class="left">
 					Could you send over some <br> pictures of your dog, please?
 				</p>
-				<div class="r">
 					<div class="images">
 						<img src="https://imgg.io/images/2024/08/24/afc1bccef7f4c1ce5afdcd928d488e1e.jpg" alt="dog image">
 						<img src="https://imgg.io/images/2024/08/24/728106d615973d65dc65cf21020cb6e8.jpg" alt="dog image">
@@ -40,41 +48,32 @@
 					<p class="right">
 						Can you make it?
 					</p>
-				</div>
 				<p class="left">
 					She looks so happy! The time <br> we discussed works. How <br> long shall I take her out for?
 				</p>
 				<div class="m30">
-					<p>
+					<input type="radio" id="m30" name="hm" class="f1">
+					<label for="m30" class="first">
 						30 minute walk
-					</p>
-					<p class="num">
+					</label>
+					<label for="m30">
 						$29
 					</p>
 				</div>
 				<div class="h1">
-					<p>
+					<input type="radio" id="h1" name="hm" class="f2">
+					<label for="h1" class="first">
 						1 hour walk
-					</p>		
-					<p class="num">
+					</label>		
+					<label for="h1">
 						$49
-					</p>		
-				</div>  
-				<input type="text" placeholder="Type a message…">
+					</label>		
+				</div> 
+				<div class="box">
+					<input type="text" placeholder="Type a message…" disabled class="box" name="box"> 
+				</div> 
 			</div>
 		</div>	
-		Simple booking
-		Stay in touch with our dog walkers through the chat interface. This makes it easy to 
-		discuss arrangements and make bookings. Once the walk has been completed you can rate 
-		your walker and book again all through the chat.
-		<div class="attribution">
-			<p>
-				Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-			</p>
-			<p>
-				Coded by <a href="https://github.com/Ahmed-El-baz" target="_blank">Ahmed-El-baz</a>.
-			</p>
-		</div>
 	</div>
 </body>
 </html>
