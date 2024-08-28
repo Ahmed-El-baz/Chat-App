@@ -61,8 +61,8 @@ body{
 }
 .parent .phone{
     background-color:  hsl(270, 20%, 96%);
-    width: 244px;
-    height: 470px;
+    width: 220px;
+    height: 420px;
     position: relative;
     top: 50%;
     left: 30%;
@@ -81,9 +81,9 @@ body{
 .parent .phone::after{
     content: "";
     position: absolute;
-    top: -7px;
+    top: -10px;
     left: 50%;
-    width: 170px;
+    width: 140px;
     height: 31px;
     transform: translatex(-50%);
     -webkit-transform: translatex(-50%);
@@ -105,14 +105,14 @@ body{
     -o-border-radius: 8px;
     display: flex;
     flex-wrap: wrap;
-    height: 18%;
+    height: 16%;
     position: relative;
     z-index: 1;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
 }
 .parent .phone .name img{
-    width: 33px;
+    width: 25px;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -120,11 +120,11 @@ body{
     -o-border-radius: 50%;
     border: 3px white solid;
     align-self: center;
-    transform: translate(40px , 5px);
-    -webkit-transform: translate(40px , 5px);
-    -moz-transform: translate(40px , 5px);
-    -ms-transform: translate(40px , 5px);
-    -o-transform: translate(40px , 5px);
+    transform: translate(30px , 5px);
+    -webkit-transform: translate(30px , 5px);
+    -moz-transform: translate(30px , 5px);
+    -ms-transform: translate(30px , 5px);
+    -o-transform: translate(30px , 5px);
 }
 .parent .phone .name .arrow{
     border: solid white;
@@ -133,8 +133,8 @@ body{
     left: 6%;
     top: 44%;
     border-width: 0 3px 3px 0;
-    height: 4px;
-    width: 4px;
+    height: 2px;
+    width: 2px;
     padding: 3px;
     z-index: 10;
     transform: rotate(135deg) translatey(-50%);
@@ -146,30 +146,30 @@ body{
 .parent .phone .name p:first-of-type{
     align-self: center;
     color: white;
-    transform: translate( 50px , -4px );
-    -webkit-transform: translate( 50px , -4px );
-    -moz-transform: translate( 50px , -4px );
-    -ms-transform: translate( 50px , -4px );
-    -o-transform: translate( 50px , -4px );
-    font-size: 13px;
+    transform: translate( 40px , -2px );
+    -webkit-transform: translate( 40px , -2px );
+    -moz-transform: translate( 40px , -2px );
+    -ms-transform: translate( 40px , -2px );
+    -o-transform: translate( 40px , -2px );
+    font-size: 12px;
 }
 .parent .phone .name p:last-of-type{
     color: hsl(276, 100%, 81%);
     align-self: center;
-    transform: translate(-55px, 17px);
-    -webkit-transform: translate(-35px, 15px);
-    -moz-transform: translate(-55px, 17px);
-    -ms-transform: translate(-55px, 17px);
-    -o-transform: translate(-55px, 17px);
+    transform: translate( -38.4px , 12px);
+    -webkit-transform: translate( -38.4px , 12px);
+    -moz-transform: translate( -38.4px , 12px);
+    -ms-transform: translate( -38.4px , 12px);
+    -o-transform: translate( -38.4px , 12px);
     width: fit-content;
-    font-size: 12px;
+    font-size: 9px;
 }
 .parent .phone .messages{
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
     height: 82%;
-    font-size: 8px;
+    font-size: 7px;
 }
 .parent .phone .messages img:last-of-type{
     margin-right: 14px;
@@ -207,7 +207,7 @@ body{
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
-    width: 48px;
+    width: 38px;
 }
 .parent .phone .messages .right{
     background-color: white;
@@ -256,11 +256,13 @@ body{
     border-bottom-left-radius: 2px;
     padding: 10px;
     width: 70%;
+    height: 13px;
     display: flex;
     color: white;
     margin-left: 14px;
-    font-size: 12px;
+    font-size: 10px;
     position: relative;
+    align-items: center;
 }
 .parent .phone .messages .h1{
     background-image: linear-gradient(to right,hsl(293, 100%, 63%), hsl(264, 100%, 61%));
@@ -272,45 +274,71 @@ body{
     border-bottom-left-radius: 2px;
     padding: 10px;
     width: 70%;
+    height: 13px;
     display: flex;
     color: white;
     margin-left: 14px;
-    font-size: 12px;
+    font-size: 10px;
     position: relative;
+    align-items: center;
+}
+.parent .phone .messages label{
+    position: absolute;
+    left: 15%;
+    top: 50%;
+    transform: translatey( -50%);
+    -webkit-transform: translatey( -50%);
+    -moz-transform: translatey( -50%);
+    -ms-transform: translatey( -50%);
+    -o-transform: translatey( -50%);
 }
 .parent .phone .messages .m30 label:last-of-type{
-    transform: translatex(calc( -151% - 35px));
-    -webkit-transform: translatex(calc( -151% - 35px));
-    -moz-transform: translatex(calc( -151% - 35px));
-    -ms-transform: translatex(calc( -151% - 35px));
-    -o-transform: translatex(calc( -151% - 35px));
-    position: relative;
-    left: 64%;
+    transform: translatey(-50%);
+    -webkit-transform: translatey(-50%);
+    -moz-transform: translatey(-50%);
+    -ms-transform: translatey(-50%);
+    -o-transform: translatey(-50%);
+    position: absolute;
+    left: 79%;
     font-weight: 700;
     font-size: 13px;
+    top: 50%;
 }
 .parent .phone .messages .h1 label:last-of-type{
-    transform: translatex(calc( -100% - 12px ));
-    -webkit-transform: translatex(calc( -100% - 12px ));
-    -moz-transform: translatex(calc( -100% - 12px ));
-    -ms-transform: translatex(calc( -100% - 12px ));
-    -o-transform: translatex(calc( -100% - 12px ));
-    position: relative;
-    left: 57%;
+    transform: translatey(-50%);
+    -webkit-transform: translatey(-50%);
+    -moz-transform: translatey(-50%);
+    -ms-transform: translatey(-50%);
+    -o-transform: translatey(-50%);
+    position: absolute;
+    left: 79%;
     font-weight: 700;
     font-size: 13px;
-    margin-right: 12px;
+    top: 50%;
 }
 .parent .phone .messages input[type="radio"]{
-    visibility: hidden;
-    margin-right: 5px;
+    opacity: 0;
+    margin-right: 6px;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translateY( -50% );
+    -webkit-transform: translateY( -50% );
+    -moz-transform: translateY( -50% );
+    -ms-transform: translateY( -50% );
+    -o-transform: translateY( -50% );
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    box-sizing: border-box;
+    z-index: 10;
 }
-.parent .phone .messages .first::before{
+.parent .phone .messages div:has(input[type="radio"])::before{
     content: "";
     background-color: transparent;
     border: hsl(289, 100%, 72%) 2px solid;
-    width: 15px;
-    height: 15px;
+    width: 12.5px;
+    height: 12.5px;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -318,43 +346,39 @@ body{
     -o-border-radius: 50%;
     margin-right: 6px;
     position: absolute;
-    left: 8%;
     top: 50%;
-    transform: translate( -50% , -50% );
-    -webkit-transform: translate( -50% , -50% );
-    -moz-transform: translate( -50% , -50% );
-    -ms-transform: translate( -50% , -50% );
-    -o-transform: translate( -50% , -50% );
+    left: 0px;
+    transform: translateY( -50% );
+    -webkit-transform: translateY( -50% );
+    -moz-transform: translateY( -50% );
+    -ms-transform: translateY( -50% );
+    -o-transform: translateY( -50% );
+    width: 12.5px;
+    height: 12.5px;
+    margin-left: 10px;
+    box-sizing: border-box;
 }
-.parent .phone .messages input[type="radio"]:checked + .first::after{
+.parent .phone .messages div:has(input[type="radio"]:checked)::after{
     background-color: var(--back);
     content: "";
     position: absolute;
-    left: 8%;
     top: 50%;
+    left: 0%;
+    margin-left: 10px;
+    transform: translate( 38% , -50%);
+    -webkit-transform: translate( 38% , -50%);
+    -moz-transform: translate( 38% , -50%);
+    -ms-transform: translate( 38% , -50%);
+    -o-transform: translate( 38% , -50%);
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    width: 10px;
-    height: 10px;
+    width: 7.5px;
+    height: 7.5px;
 }
-.parent .phone .messages .f2:checked + .first::after{
-    transform: translate( -47% , -50% );
-    -webkit-transform: translate( -47% , -50% );
-    -moz-transform: translate( -47% , -50% );
-    -ms-transform: translate( -47% , -50% );
-    -o-transform: translate( -47% , -50% );
-}
-.parent .phone .messages .f1:checked + .first::after{
-    transform: translate( -48% , -47% );
-    -webkit-transform: translate( -48% , -47% );
-    -moz-transform: translate( -48% , -47% );
-    -ms-transform: translate( -48% , -47% );
-    -o-transform: translate( -48% , -47% );
-}
-.parent .phone .messages input[type="radio"]:checked + .first::before{
+.parent .phone .messages div:has(input[type="radio"]:checked)::before{
     border: 2px var(--back) solid;
 }
 .parent .phone .messages .box input{
@@ -367,8 +391,6 @@ body{
     width: 100%;
     padding-left: 20px;
     margin-left: 14px;
-    margin-right: 14px;
-    margin-bottom: 7px;
     height: 50px;
     outline: none;
     border: none;
@@ -384,11 +406,11 @@ body{
     position: absolute;
     width: 37px;
     height: 37px;
-    transform: translate( calc(-50% - 10px) , calc(-50% - 3px));
-    -webkit-transform: translate( calc(-50% - 10px) , calc(-50% - 3px));
-    -moz-transform: translate( calc(-50% - 10px) , calc(-50% - 3px));
-    -ms-transform: translate( calc(-50% - 10px) , calc(-50% - 3px));
-    -o-transform: translate( calc(-50% - 10px) , calc(-50% - 3px));
+    transform: translate( calc(-50% - 10px) , calc(-50%));
+    -webkit-transform: translate( calc(-50% - 10px) , calc(-50%));
+    -moz-transform: translate( calc(-50% - 10px) , calc(-50%));
+    -ms-transform: translate( calc(-50% - 10px) , calc(-50%));
+    -o-transform: translate( calc(-50% - 10px) , calc(-50%));
     background-color: hsl(271, 36%, 24%);
     border-radius: 50%;
     left: 100%;
@@ -406,14 +428,77 @@ body{
     position: absolute;
     left: 100%;
     top: 50%;
-    border-width: 0 3px 3px 0;
     height: 4px;
     width: 4px;
     padding: 3px;
     z-index: 10;
-    transform: translate( calc(-50% - 12px) , calc(-50% - 3px)) rotate(-45deg);
-    -webkit-transform: translate( calc(-50% - 12px) , calc(-50% - 3px)) rotate(-45deg);
-    -moz-transform: translate( calc(-50% - 12px) , calc(-50% - 3px)) rotate(-45deg);
-    -ms-transform: translate( calc(-50% - 12px) , calc(-50% - 3px)) rotate(-45deg);
-    -o-transform: translate( calc(-50% - 12px) , calc(-50% - 3px)) rotate(-45deg);
+    transform: translate( calc(-50% - 12px) , calc(-50%)) rotate(-45deg);
+    -webkit-transform: translate( calc(-50% - 12px) , calc(-50%)) rotate(-45deg);
+    -moz-transform: translate( calc(-50% - 12px) , calc(-50%)) rotate(-45deg);
+    -ms-transform: translate( calc(-50% - 12px) , calc(-50%)) rotate(-45deg);
+    -o-transform: translate( calc(-50% - 12px) , calc(-50%)) rotate(-45deg);
+}
+@media (max-width: 900px){
+    .parent .phone{
+        left: 50%;
+        top: 35%;
+        transform: translate(-50% , -50% );
+        -webkit-transform: translate(-50% , -50% );
+        -moz-transform: translate(-50% , -50% );
+        -ms-transform: translate(-50% , -50% );
+        -o-transform: translate(-50% , -50% );
+        height: 360px;
+        overflow: hidden;
+    }
+    .parent .phone .box input{
+        height: 40px !important;
+        margin-bottom: -3px;
+    }
+    .parent .phone .messages .box::before{
+        height: 30px;
+        width: 30px;
+    }
+    .parent .phone .messages .h1{
+        height: 7px;
+        margin-bottom: 3px;
+    }
+    .parent .phone .messages .m30{
+        height: 7px;
+    }
+    .parent .phone::after{
+        top: -16px;
+    }
+    .parent .phone .messages .images img{
+        margin-left: 5px;
+    }
+    .parent .text{
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        top: 65%;
+        height: fit-content;
+        width: 310px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .parent .text h1{
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    .parent .text p{
+        text-align: center;
+        
+    }
+    .parent .vs{
+        height: 60%;
+        width: 53%;
+    }
+    .parent .gs{
+        height: 60%;
+        width: 53%;
+    }
 }
